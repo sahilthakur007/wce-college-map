@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import React, { useRef, useEffect } from "react";
 import { loadModules } from "esri-loader";
-
+import Map from "./components/Map"
 // import { useEffect, useRef, useState } from "react";
 // import Graphic from '@arcgis/core/Graphic';
 // import { solve } from '@arcgis/core/rest/route';
@@ -52,7 +52,7 @@ export default function App() {
   );
   return (
     // <View style={styles.container}  >
-      <div style={{ height: 800 }} ref={mapEl} />
+      <Map/>
   //  </View>
   );
 }
